@@ -2,7 +2,7 @@
 <ul>
     <li *ngFor="let airline of airlines$ | async">
         <!--TODO: unchecked airlines will be excluded in the search result and
-        will remain on the list (unchecked) unless search button is trigger
+        will remain on the list (unchecked) unless search button is clicked
         again-->
         <input type="checkbox" id="{{ airline }}" checked />
         <label for="{{ airline }}">{{ airline }}</label>

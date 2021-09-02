@@ -11,7 +11,8 @@ export class SearchService {
         private dataService: FlightDataService
     ) {}
 
-    searchFlights() {
+  // TODO: filter result based on airline name and stops search criteria
+  searchFlights() {
         this.http
             .get<Itinerary[]>('https://nmflightapi.azurewebsites.net/api/flight')
             .subscribe((itineraries: Itinerary[]) => {
